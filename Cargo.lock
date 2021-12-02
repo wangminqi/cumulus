@@ -5873,6 +5873,7 @@ dependencies = [
  "substrate-build-script-utils",
  "substrate-frame-rpc-system",
  "substrate-prometheus-endpoint",
+ "try-runtime-cli",
 ]
 
 [[package]]
@@ -5894,6 +5895,7 @@ dependencies = [
  "frame-system",
  "frame-system-benchmarking",
  "frame-system-rpc-runtime-api",
+ "frame-try-runtime",
  "hex-literal 0.3.4",
  "log",
  "pallet-aura",
@@ -6480,6 +6482,7 @@ dependencies = [
  "substrate-frame-rpc-system",
  "substrate-prometheus-endpoint",
  "tempfile",
+ "try-runtime-cli",
  "westmint-runtime",
 ]
 
@@ -9632,6 +9635,7 @@ dependencies = [
  "frame-executive",
  "frame-support",
  "frame-system",
+ "frame-try-runtime",
  "log",
  "parachain-info",
  "parity-scale-codec",
@@ -10528,6 +10532,7 @@ dependencies = [
  "frame-system",
  "frame-system-benchmarking",
  "frame-system-rpc-runtime-api",
+ "frame-try-runtime",
  "hex-literal 0.3.4",
  "log",
  "node-primitives",
@@ -10593,6 +10598,7 @@ dependencies = [
  "frame-system",
  "frame-system-benchmarking",
  "frame-system-rpc-runtime-api",
+ "frame-try-runtime",
  "hex-literal 0.3.4",
  "log",
  "node-primitives",
@@ -11995,6 +12001,7 @@ dependencies = [
  "frame-system",
  "frame-system-benchmarking",
  "frame-system-rpc-runtime-api",
+ "frame-try-runtime",
  "hex-literal 0.3.4",
  "log",
  "node-primitives",

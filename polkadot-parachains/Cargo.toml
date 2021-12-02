@@ -28,8 +28,8 @@ westmint-runtime = { path = "westmint" }
 parachains-common = { path = "parachains-common" }
 
 # Substrate dependencies
-frame-benchmarking = { git = 'https://github.com/paritytech/substrate', branch = "dp-jsonrpsee-integration-2" }
-frame-benchmarking-cli = { git = 'https://github.com/paritytech/substrate', branch = "dp-jsonrpsee-integration-2" }
+frame-benchmarking = { git = "https://github.com/paritytech/substrate", branch = "dp-jsonrpsee-integration-2" }
+frame-benchmarking-cli = { git = "https://github.com/paritytech/substrate", branch = "dp-jsonrpsee-integration-2" }
 sp-runtime = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "dp-jsonrpsee-integration-2" }
 sp-io = { git = "https://github.com/paritytech/substrate", branch = "dp-jsonrpsee-integration-2" }
 sp-core = { git = "https://github.com/paritytech/substrate", branch = "dp-jsonrpsee-integration-2" }
@@ -57,6 +57,9 @@ sp-offchain = { git = "https://github.com/paritytech/substrate", branch = "dp-js
 sp-api = { git = "https://github.com/paritytech/substrate", branch = "dp-jsonrpsee-integration-2" }
 sp-consensus-aura = { git = "https://github.com/paritytech/substrate", branch = "dp-jsonrpsee-integration-2" }
 substrate-prometheus-endpoint = { git = "https://github.com/paritytech/substrate", branch = "dp-jsonrpsee-integration-2" }
+
+# try-runtime stuff.
+try-runtime-cli = { git = "https://github.com/paritytech/substrate", branch = "dp-jsonrpsee-integration-2" }
 
 # RPC related dependencies
 jsonrpc-core = "18.0.0"
@@ -91,8 +94,14 @@ tempfile = "3.2.0"
 [features]
 default = []
 runtime-benchmarks = [
-	'polkadot-service/runtime-benchmarks',
-	'statemint-runtime/runtime-benchmarks',
-	'statemine-runtime/runtime-benchmarks',
-	'westmint-runtime/runtime-benchmarks',
+	"polkadot-service/runtime-benchmarks",
+	"statemint-runtime/runtime-benchmarks",
+	"statemine-runtime/runtime-benchmarks",
+	"westmint-runtime/runtime-benchmarks",
+]
+try-runtime = [
+	'statemint-runtime/try-runtime',
+	'statemine-runtime/try-runtime',
+	'westmint-runtime/try-runtime',
+	'shell-runtime/try-runtime',
 ]
