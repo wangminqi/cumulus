@@ -17,7 +17,8 @@
 use cumulus_primitives_core::ParaId;
 use cumulus_test_service::{initial_head_data, run_relay_chain_validator_node, Keyring::*};
 
-#[substrate_test_utils::test]
+
+#[substrate_test_utils::test(flavor = "multi_thread")]
 #[ignore]
 async fn test_collating_and_non_collator_mode_catching_up() {
 	let mut builder = sc_cli::LoggerBuilder::new("");
