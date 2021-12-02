@@ -45,7 +45,7 @@ use sc_service::{
 };
 use sp_arithmetic::traits::SaturatedConversion;
 use sp_blockchain::HeaderBackend;
-use sp_core::{Pair, H256};
+use sp_core::{Pair, H256, Bytes};
 use sp_keyring::Sr25519Keyring;
 use sp_runtime::{codec::Encode, generic, traits::BlakeTwo256};
 use sp_state_machine::BasicExternalities;
@@ -654,7 +654,7 @@ impl TestNode {
 		caller: Sr25519Keyring,
 	) -> Result<String, serde_json::Error> {
 		let extrinsic = construct_extrinsic(&*self.client, call, caller.pair(), Some(0));
-		let payload = hex::encode(extrinsic.encode());
+		let payload: Bytes = extrinsic.encode().into();
 		let rpc = self
 			.rpc_handlers
 			.rpc_query("author_submitExtrinsic", vec![payload])
