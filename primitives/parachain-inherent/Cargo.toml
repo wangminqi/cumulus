@@ -37,7 +37,7 @@ std = [
 	"sp-api",
 	"sp-core/std",
 	"sp-inherents/std",
-	"sp-runtime",
+	"sp-runtime/std",
 	"sp-state-machine",
 	"sp-std/std",
 	"sp-storage",
