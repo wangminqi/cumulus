@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["WaitError",""]],"trait":[["RelayChainInterface","Trait that provides all necessary methods for interaction between collator and relay chain."]]});
+window.SIDEBAR_ITEMS = {"enum":["OccupiedCoreAssumption","RelayChainError"],"struct":["CommittedCandidateReceipt","InboundDownwardMessage","InboundHrmpMessage","OverseerHandle","ParaId","PersistedValidationData"],"trait":["RelayChainInterface"],"type":["PHash","PHeader","RelayChainResult","SessionIndex","StorageValue","ValidatorId"]};

@@ -1,19 +1,29 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Create new implementations of the `Get` trait."><meta name="keywords" content="rust, rustlang, rust-lang, parameter_types"><title>parameter_types in rococo_parachain_runtime - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../light.css"  id="themeStyle"><link rel="stylesheet" type="text/css" href="../dark.css" disabled ><link rel="stylesheet" type="text/css" href="../ayu.css" disabled ><script id="default-settings" ></script><script src="../storage.js"></script><script src="../crates.js"></script><script defer src="../main.js"></script>
-    <noscript><link rel="stylesheet" href="../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../favicon.svg"><style type="text/css">#crate-search{background-image:url("../down-arrow.svg");}</style></head><body class="rustdoc macro"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu" role="button">&#9776;</div><a href='../rococo_parachain_runtime/index.html'><div class='logo-container rust-logo'><img src='../rust-logo.png' alt='logo'></div></a><div class="sidebar-elems"><h2 class="location">Other items in<br><a href="index.html">rococo_parachain_runtime</a></h2><div id="sidebar-vars" data-name="parameter_types" data-ty="macro" data-relpath=""></div><script defer src="sidebar-items.js"></script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!" aria-haspopup="menu" title="themes"><img width="18" height="18" alt="Pick another theme!" src="../brush.svg"></button><div id="theme-choices" role="menu"></div></div><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><button type="button" id="help-button" title="help">?</button><a id="settings-menu" href="../settings.html" title="settings"><img width="18" height="18" alt="Change settings" src="../wheel.svg"></a></div></form></nav><section id="main" class="content"><h1 class="fqn"><span class="in-band">Macro <a href="index.html">rococo_parachain_runtime</a>::<wbr><a class="macro" href="#">parameter_types</a><button id="copy-path" onclick="copy_path(this)" title="Copy item path to clipboard"><img src="../clipboard.svg" width="19" height="18" alt="Copy item path"></button></span><span class="out-of-band"><span id="render-detail"><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class="inner">&#x2212;</span>]</a></span></span></h1><div class="docblock item-decl"><div class="example-wrap"><pre class="rust macro"><code><span class="macro">macro_rules!</span> <span class="ident">parameter_types</span> {
-    ($(<span class="attribute">#[<span class="macro-nonterminal">$</span><span class="macro-nonterminal">attr</span> : <span class="ident">meta</span>]</span>) <span class="op">*</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">vis</span> : <span class="ident">vis</span> <span class="kw">const</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">name</span> : <span class="ident">ident</span> : <span class="macro-nonterminal">$</span><span class="kw">type</span> : <span class="macro-nonterminal">ty</span> <span class="op">=</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">value</span> :
- <span class="ident">expr</span> ; $(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">rest</span> : <span class="ident">tt</span>) <span class="kw-2">*</span>) =&gt; { ... };
-    ($(<span class="attribute">#[<span class="macro-nonterminal">$</span><span class="macro-nonterminal">attr</span> : <span class="ident">meta</span>]</span>) <span class="op">*</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">vis</span> : <span class="ident">vis</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">name</span> : <span class="ident">ident</span> : <span class="macro-nonterminal">$</span><span class="kw">type</span> : <span class="macro-nonterminal">ty</span> <span class="op">=</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">value</span> : <span class="ident">expr</span> ;
- $(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">rest</span> : <span class="ident">tt</span>) <span class="kw-2">*</span>) =&gt; { ... };
-    ($(<span class="attribute">#[<span class="macro-nonterminal">$</span><span class="macro-nonterminal">attr</span> : <span class="ident">meta</span>]</span>) <span class="op">*</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">vis</span> : <span class="ident">vis</span> <span class="ident">storage</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">name</span> : <span class="ident">ident</span> : <span class="macro-nonterminal">$</span><span class="kw">type</span> : <span class="macro-nonterminal">ty</span> <span class="op">=</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">value</span> :
- <span class="ident">expr</span> ; $(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">rest</span> : <span class="ident">tt</span>) <span class="kw-2">*</span>) =&gt; { ... };
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Create new implementations of the `Get` trait."><title>parameter_types in rococo_parachain_runtime - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-46f98efaafac5295.ttf.woff2,FiraSans-Regular-018c141bf0843ffd.woff2,FiraSans-Medium-8f9a781e4970d388.woff2,SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2,SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../static.files/rustdoc-081576b923113409.css"><meta name="rustdoc-vars" data-root-path="../" data-static-root-path="../static.files/" data-current-crate="rococo_parachain_runtime" data-themes="" data-resource-suffix="" data-rustdoc-version="1.79.0 (129f3b996 2024-06-10)" data-channel="1.79.0" data-search-js="search-bf21c90c8c1d92b1.js" data-settings-js="settings-4313503d2e1961c2.js" ><script src="../static.files/storage-e32f0c247825364d.js"></script><script defer src="sidebar-items.js"></script><script defer src="../static.files/main-20a3ad099b048cf2.js"></script><noscript><link rel="stylesheet" href="../static.files/noscript-09095024cf37855e.css"></noscript><link rel="alternate icon" type="image/png" href="../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc macro"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle" title="show sidebar"></button></nav><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../rococo_parachain_runtime/index.html">rococo_parachain_runtime</a><span class="version">0.1.0</span></h2></div><div class="sidebar-elems"></div></nav><div class="sidebar-resizer"></div><main><div class="width-limiter"><nav class="sub"><form class="search-form"><span></span><div id="sidebar-button" tabindex="-1"><a href="../rococo_parachain_runtime/all.html" title="show sidebar"></a></div><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Type ‘S’ or ‘/’ to search, ‘?’ for more options…" type="search"><div id="help-button" tabindex="-1"><a href="../help.html" title="help">?</a></div><div id="settings-menu" tabindex="-1"><a href="../settings.html" title="settings">Settings</a></div></form></nav><section id="main-content" class="content"><div class="main-heading"><h1>Macro <a href="index.html">rococo_parachain_runtime</a>::<wbr><a class="macro" href="#">parameter_types</a><button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><span class="out-of-band"><button id="toggle-all-docs" title="collapse all docs">[<span>&#x2212;</span>]</button></span></div><pre class="rust item-decl"><span class="macro">macro_rules!</span> parameter_types {
+    (
+		$( <span class="attr">#[ <span class="macro-nonterminal">$attr</span>:meta ] </span>)*
+		<span class="macro-nonterminal">$vis</span>:vis <span class="kw">const </span><span class="macro-nonterminal">$name</span>:ident $(&lt; $(<span class="macro-nonterminal">$ty_params</span>:ident),* &gt;)<span class="question-mark">?</span>: <span class="macro-nonterminal">$</span><span class="kw">type</span>:<span class="macro-nonterminal">ty </span>= <span class="macro-nonterminal">$value</span>:expr;
+		$( <span class="macro-nonterminal">$rest</span>:tt )*
+	) =&gt; { ... };
+    (
+		$( <span class="attr">#[ <span class="macro-nonterminal">$attr</span>:meta ] </span>)*
+		<span class="macro-nonterminal">$vis</span>:vis <span class="macro-nonterminal">$name</span>:ident $(&lt; $(<span class="macro-nonterminal">$ty_params</span>:ident),* &gt;)<span class="question-mark">?</span>: <span class="macro-nonterminal">$</span><span class="kw">type</span>:<span class="macro-nonterminal">ty </span>= <span class="macro-nonterminal">$value</span>:expr;
+		$( <span class="macro-nonterminal">$rest</span>:tt )*
+	) =&gt; { ... };
+    (
+		$( <span class="attr">#[ <span class="macro-nonterminal">$attr</span>:meta ] </span>)*
+		<span class="macro-nonterminal">$vis</span>:vis storage <span class="macro-nonterminal">$name</span>:ident $(&lt; $(<span class="macro-nonterminal">$ty_params</span>:ident),* &gt;)<span class="question-mark">?</span>: <span class="macro-nonterminal">$</span><span class="kw">type</span>:<span class="macro-nonterminal">ty </span>= <span class="macro-nonterminal">$value</span>:expr;
+		$( <span class="macro-nonterminal">$rest</span>:tt )*
+	) =&gt; { ... };
     () =&gt; { ... };
-    (<span class="ident">IMPL_CONST</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">name</span> : <span class="ident">ident</span>, <span class="macro-nonterminal">$</span><span class="kw">type</span> : <span class="macro-nonterminal">ty</span>, <span class="macro-nonterminal">$</span><span class="macro-nonterminal">value</span> : <span class="ident">expr</span>) =&gt; { ... };
-    (<span class="ident">IMPL</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">name</span> : <span class="ident">ident</span>, <span class="macro-nonterminal">$</span><span class="kw">type</span> : <span class="macro-nonterminal">ty</span>, <span class="macro-nonterminal">$</span><span class="macro-nonterminal">value</span> : <span class="ident">expr</span>) =&gt; { ... };
-    (<span class="ident">IMPL_STORAGE</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">name</span> : <span class="ident">ident</span>, <span class="macro-nonterminal">$</span><span class="kw">type</span> : <span class="macro-nonterminal">ty</span>, <span class="macro-nonterminal">$</span><span class="macro-nonterminal">value</span> : <span class="ident">expr</span>) =&gt; { ... };
-    ($(<span class="attribute">#[<span class="macro-nonterminal">$</span><span class="macro-nonterminal">attr</span> : <span class="ident">meta</span>]</span>) <span class="op">*</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">vis</span> : <span class="ident">vis</span> <span class="kw">static</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">name</span> : <span class="ident">ident</span> : <span class="macro-nonterminal">$</span><span class="kw">type</span> : <span class="macro-nonterminal">ty</span> <span class="op">=</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">value</span> :
- <span class="ident">expr</span> ; $(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">rest</span> : <span class="ident">tt</span>) <span class="kw-2">*</span>) =&gt; { ... };
-}</code></pre></div>
-</div><details class="rustdoc-toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>Create new implementations of the <a href="crate::traits::Get"><code>Get</code></a> trait.</p>
+    (IMPL_CONST <span class="macro-nonterminal">$name</span>:ident, <span class="macro-nonterminal">$</span><span class="kw">type</span>:<span class="macro-nonterminal">ty</span>, <span class="macro-nonterminal">$value</span>:expr $(, <span class="macro-nonterminal">$ty_params</span>:ident)<span class="kw-2">*</span>) =&gt; { ... };
+    (IMPL <span class="macro-nonterminal">$name</span>:ident, <span class="macro-nonterminal">$</span><span class="kw">type</span>:<span class="macro-nonterminal">ty</span>, <span class="macro-nonterminal">$value</span>:expr $(, <span class="macro-nonterminal">$ty_params</span>:ident)<span class="kw-2">*</span>) =&gt; { ... };
+    (IMPL_STORAGE <span class="macro-nonterminal">$name</span>:ident, <span class="macro-nonterminal">$</span><span class="kw">type</span>:<span class="macro-nonterminal">ty</span>, <span class="macro-nonterminal">$value</span>:expr $(, <span class="macro-nonterminal">$ty_params</span>:ident)<span class="kw-2">*</span>) =&gt; { ... };
+    (
+		$( <span class="attr">#[ <span class="macro-nonterminal">$attr</span>:meta ] </span>)*
+		<span class="macro-nonterminal">$vis</span>:vis <span class="kw">static </span><span class="macro-nonterminal">$name</span>:ident: <span class="macro-nonterminal">$</span><span class="kw">type</span>:<span class="macro-nonterminal">ty </span>= <span class="macro-nonterminal">$value</span>:expr;
+		$( <span class="macro-nonterminal">$rest</span>:tt )*
+	) =&gt; { ... };
+}</pre><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>Create new implementations of the <a href="crate::traits::Get"><code>Get</code></a> trait.</p>
 <p>The so-called parameter type can be created in four different ways:</p>
 <ul>
 <li>
@@ -38,41 +48,40 @@ provided in this case to alter the static variable. <strong>This is intended for
 ONLY available when <code>std</code> is enabled.</strong></p>
 </li>
 </ul>
-<h2 id="examples" class="section-header"><a href="#examples">Examples</a></h2>
-<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="comment">// This function cannot be used in a const context.</span>
-<span class="kw">fn</span> <span class="ident">non_const_expression</span>() -&gt; <span class="ident">u64</span> { <span class="number">99</span> }
+<h2 id="examples"><a class="doc-anchor" href="#examples">§</a>Examples</h2>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="comment">// This function cannot be used in a const context.
+</span><span class="kw">fn </span>non_const_expression() -&gt; u64 { <span class="number">99 </span>}
 
-<span class="kw">const</span> <span class="ident">FIXED_VALUE</span>: <span class="ident">u64</span> <span class="op">=</span> <span class="number">10</span>;
+<span class="kw">const </span>FIXED_VALUE: u64 = <span class="number">10</span>;
 <span class="macro">parameter_types!</span> {
-   <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">Argument</span>: <span class="ident">u64</span> <span class="op">=</span> <span class="number">42</span> <span class="op">+</span> <span class="ident">FIXED_VALUE</span>;
-   <span class="doccomment">/// Visibility of the type is optional</span>
-   <span class="ident">OtherArgument</span>: <span class="ident">u64</span> <span class="op">=</span> <span class="ident">non_const_expression</span>();
-   <span class="kw">pub</span> <span class="ident">storage</span> <span class="ident">StorageArgument</span>: <span class="ident">u64</span> <span class="op">=</span> <span class="number">5</span>;
-   <span class="kw">pub</span> <span class="kw">static</span> <span class="ident">StaticArgument</span>: <span class="ident">u32</span> <span class="op">=</span> <span class="number">7</span>;
+   <span class="kw">pub const </span>Argument: u64 = <span class="number">42 </span>+ FIXED_VALUE;
+   <span class="doccomment">/// Visibility of the type is optional
+   </span>OtherArgument: u64 = non_const_expression();
+   <span class="kw">pub </span>storage StorageArgument: u64 = <span class="number">5</span>;
+   <span class="kw">pub static </span>StaticArgument: u32 = <span class="number">7</span>;
 }
 
-<span class="kw">trait</span> <span class="ident">Config</span> {
-   <span class="kw">type</span> <span class="ident">Parameter</span>: <span class="ident">Get</span><span class="op">&lt;</span><span class="ident">u64</span><span class="op">&gt;</span>;
-   <span class="kw">type</span> <span class="ident">OtherParameter</span>: <span class="ident">Get</span><span class="op">&lt;</span><span class="ident">u64</span><span class="op">&gt;</span>;
-   <span class="kw">type</span> <span class="ident">StorageParameter</span>: <span class="ident">Get</span><span class="op">&lt;</span><span class="ident">u64</span><span class="op">&gt;</span>;
-   <span class="kw">type</span> <span class="ident">StaticParameter</span>: <span class="ident">Get</span><span class="op">&lt;</span><span class="ident">u32</span><span class="op">&gt;</span>;
+<span class="kw">trait </span>Config {
+   <span class="kw">type </span>Parameter: Get&lt;u64&gt;;
+   <span class="kw">type </span>OtherParameter: Get&lt;u64&gt;;
+   <span class="kw">type </span>StorageParameter: Get&lt;u64&gt;;
+   <span class="kw">type </span>StaticParameter: Get&lt;u32&gt;;
 }
 
-<span class="kw">struct</span> <span class="ident">Runtime</span>;
-<span class="kw">impl</span> <span class="ident">Config</span> <span class="kw">for</span> <span class="ident">Runtime</span> {
-   <span class="kw">type</span> <span class="ident">Parameter</span> <span class="op">=</span> <span class="ident">Argument</span>;
-   <span class="kw">type</span> <span class="ident">OtherParameter</span> <span class="op">=</span> <span class="ident">OtherArgument</span>;
-   <span class="kw">type</span> <span class="ident">StorageParameter</span> <span class="op">=</span> <span class="ident">StorageArgument</span>;
-   <span class="kw">type</span> <span class="ident">StaticParameter</span> <span class="op">=</span> <span class="ident">StaticArgument</span>;
+<span class="kw">struct </span>Runtime;
+<span class="kw">impl </span>Config <span class="kw">for </span>Runtime {
+   <span class="kw">type </span>Parameter = Argument;
+   <span class="kw">type </span>OtherParameter = OtherArgument;
+   <span class="kw">type </span>StorageParameter = StorageArgument;
+   <span class="kw">type </span>StaticParameter = StaticArgument;
 }
 
 <span class="comment">// In testing, `StaticArgument` can be altered later: `StaticArgument::set(8)`.</span></code></pre></div>
-<h2 id="invalid-example" class="section-header"><a href="#invalid-example">Invalid example:</a></h2>
-<div class='information'><div class='tooltip compile_fail'>ⓘ</div></div><div class="example-wrap"><pre class="rust rust-example-rendered compile_fail"><code><span class="comment">// This function cannot be used in a const context.</span>
-<span class="kw">fn</span> <span class="ident">non_const_expression</span>() -&gt; <span class="ident">u64</span> { <span class="number">99</span> }
+<h2 id="invalid-example"><a class="doc-anchor" href="#invalid-example">§</a>Invalid example:</h2>
+<div class="example-wrap compile_fail"><a href="#" class="tooltip" title="This example deliberately fails to compile">ⓘ</a><pre class="rust rust-example-rendered"><code><span class="comment">// This function cannot be used in a const context.
+</span><span class="kw">fn </span>non_const_expression() -&gt; u64 { <span class="number">99 </span>}
 
 <span class="macro">parameter_types!</span> {
-   <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">Argument</span>: <span class="ident">u64</span> <span class="op">=</span> <span class="ident">non_const_expression</span>();
+   <span class="kw">pub const </span>Argument: u64 = non_const_expression();
 }</code></pre></div>
-</div></details></section><section id="search" class="content hidden"></section><div id="rustdoc-vars" data-root-path="../" data-current-crate="rococo_parachain_runtime" data-search-index-js="../search-index.js" data-search-js="../search.js"></div>
-</body></html>
+</div></details></section></div></main></body></html>

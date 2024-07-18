@@ -1,3 +1,0 @@
-(function() {var implementors = {};
-implementors["cumulus_test_service"] = [{"text":"impl BuildStorage for <a class=\"struct\" href=\"cumulus_test_service/struct.GenesisExt.html\" title=\"struct cumulus_test_service::GenesisExt\">GenesisExt</a>","synthetic":false,"types":["cumulus_test_service::chain_spec::GenesisExt"]}];
-if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
